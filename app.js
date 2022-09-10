@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-app.get("/",function(req,res){
+app.get("/home",function(req,res){
     // res.send({
     //     message: "This is Home page",
     //     descroiption: "This is made only for testing"

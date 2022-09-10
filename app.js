@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/myendpoint', (req, res) => {
-    res.sendFile(`${__dirname}/test.html`);
+    res.sendFile(`${__dirname}/index.html`);
   });
 
 app.listen(80,function(){

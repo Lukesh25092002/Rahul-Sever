@@ -3,10 +3,12 @@ const app = express();
 app.use(express.json());
 
 app.get("/",function(req,res){
-    res.send({
-        message: "This is Home page",
-        descroiption: "This is made only for testing"
-    });
+    // res.send({
+    //     message: "This is Home page",
+    //     descroiption: "This is made only for testing"
+    // });
+
+    res.sendFile("yyy.html",{root: __dirname});
 })
 
 app.listen(80,function(){
